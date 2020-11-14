@@ -24,7 +24,7 @@ const Shop = () => {
             },
             {
                 product_id: 345678,
-                product_img: "https://images.unsplash.com/photo-1459755486867-b55449bb39ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80",
+                product_img: "https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80",
                 product_name: "Premium Coffee Filters - 100 Pack",
                 product_desc: "Premium coffee filters will give the best chemical-free coffee experience.",
                 product_price: 4.99
