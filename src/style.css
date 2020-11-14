@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+.fade-in {
+    animation: fadeIn ease 1.5s;
+    -webkit-animation: fadeIn ease 1.5s;
+    -moz-animation: fadeIn ease 1.5s;
+    -o-animation: fadeIn ease 1.5s;
+    -ms-animation: fadeIn ease 1.5s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+/* .fade-out {
+    animation: fadeout ease 2s;
+    -webkit-animation: fadeout ease 2s;
+    -moz-animation: fadeout ease 2s;
+    -o-animation: fadeout ease 2s;
+    -ms-animation: fadeout ease 2s;
+    display:none;
+}
+
+@keyframes fadeout {
+    0% {opacity:1;}
+    100% {opacity:0;}
+} */
+
+#meow {
+    color: rgba(143, 33, 33, 0.925);
+    font-size: 1.25em;
+    font-style: italic;
+}
+
+#email {
+    color: rgba(143, 33, 33, 0.925);
+}
+
+#nav {
+    position:fixed;
+    top: 25%;
+    max-width: 100px;
+    min-width:50px;
+}
+
+#header {
+    background-image: url("https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+    background-size: 100%;
+    background-position: center;
+}
+
+#header img {
+    width: 15%;
+}
+
+#nav img { 
+    width: 80%;
+}
+
+footer img{ 
+    width: 10%;
+}
+
+#nav a {
+    margin-bottom: 5px;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+
+
+#randomKitty {
+    border-radius: 10px;
+    height: 500px;
+}
+
+#shop_cart {
+    position:fixed;
+    top:25%;
+    right:0;
+    width: 25%;
+    padding: 2vw;
+    border-radius: 10px;
+    display:none;
+}
+
+#cup {
+    width:8%;
+}
+
+#close {
+    width: 25px;
+    cursor: pointer;
+}
+
+#shop_cart table {
+    table-layout: auto;
+    width:100%;
+    font-size: .75em;
+}
+
+.td_name_width {
+    width:70%;
+}
+.td_qty_width {
+    width:50px;
+    padding-left: 10px;
+}
+
+#cancel {
+    width:25px;
+    margin-top:5px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+#trivia img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.zoom {
+    transition:transform 1s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+#shopping-cart {
+    width: 3vh;
+}
