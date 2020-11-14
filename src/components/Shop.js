@@ -68,7 +68,9 @@ const Shop = () => {
     );
 
 
-    const open_shop = () => {
+    const open_shop = (e) => {
+
+        e.preventDefault();
         document.getElementById("shop_cart").style.display = "block";
     }
 
@@ -167,7 +169,7 @@ const Shop = () => {
 
 
 
-// recalulate total when shopping cart is updated
+// recalulate total after shopping cart is updated
     useEffect(() => {
         // console.log("effect", shop_cart_items);
         shopTotal()
@@ -176,7 +178,7 @@ const Shop = () => {
     return (
         <main className="container d-flex flex-column align-items-center fade-in">
             <h1>Kitty Coffee Products</h1>
-            <a href="#" onClick={() => document.getElementById("shop_cart").style.display = "block"} className="text-light"><button className="btn btn-checkout"><img id="shopping-cart" className="mr-2" src={shop_cart} alt="shopping cart"/>View Cart</button></a> 
+            <button onClick={open_shop} className="btn btn-checkout"><img id="shopping-cart" className="mr-2" src={shop_cart} alt="shopping cart"/>View Cart</button>
             
             <ProductList products={products} add_shop_cart={add_shop_cart} />
             <ShoppingCart checkout={checkout} shop_cart_items={shop_cart_items} removeItem={removeItem} updateCart={update_shop_cart} shopTotal={shopTotal} total={shop_total} />
