@@ -1,5 +1,3 @@
-import Axios from 'axios';
-import React, { useState, useEffect } from 'react';
 import '../../src/style.css';
 import kitty from '../img/kitty.png';
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../src/style.css';
 import close from '../img/close.png'
 import cancel from '../img/cancel.png'
@@ -11,8 +11,7 @@ const ShoppingCart = (props) => {
     // const [shop_item_qty, setShopItemQty] = useState([])
 
     const hideCart = () => {
-        const el = document.getElementById("shop_cart").style.display = "none";
-        
+        document.getElementById("shop_cart").style.display = "none";
     }
 
     const handleChange = (product, e) => {

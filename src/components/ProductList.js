@@ -17,7 +17,7 @@ const ProductList = (props) => {
                                         <p className="card-text">{p.product_desc}</p>
                                         <p className="card-text">${p.product_price}</p>
                                         <input type="hidden" name="price" value={p.product_price}/>
-                                        <a onClick={(e)=>{props.add_shop_cart(e, p)}} href="#" className="btn btn-warning">Add to cart</a>
+                                        <button onClick={(e)=>{props.add_shop_cart(e, p)}} className="btn btn-warning">Add to cart</button>
                                     </div>
                             </div>
                         )

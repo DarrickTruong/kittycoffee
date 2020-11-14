@@ -1,5 +1,5 @@
 import Axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const Home = (props) => {
 
@@ -32,7 +32,7 @@ const Home = (props) => {
 
     const getRandomKitties = async () => {
         let object = await images();
-        console.log("waiting", object);
+        // console.log("waiting", object);
         setKitty(object);
     }
 
@@ -41,7 +41,7 @@ const Home = (props) => {
     }
 
     const answer = (e) => {
-        console.log(e.target.id);
+        // console.log(e.target.id);
         if (e.target.id === "triv_1") {
             e.target.innerHTML = "Answer: Cats have 230 bones, a whopping 24 more bones than humans."
         } else if (e.target.id === "triv_2") {
