@@ -45,6 +45,7 @@
     top: 25%;
     max-width: 100px;
     min-width:50px;
+    z-index: 1;
 }
 
 #header {
@@ -81,7 +82,7 @@ footer img{
     position:fixed;
     top:25%;
     right:0;
-    width: 25%;
+    width: 25vw;
     padding: 2vw;
     border-radius: 10px;
     display:none;
