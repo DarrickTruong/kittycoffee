@@ -80,11 +80,11 @@ const Home = (props) => {
                 <p className="text-center font-weight-bold font-italic">The online coffee store for coffee and cat lovers. </p>
                 <div className="p-5 d-flex flex-wrap justify-content-around">
                     <div className="col-sm-6 mb-3 border rounded bg-light d-flex flex-column align-items-center justify-content-center">
-                        <p class="w-50"><span id="meow">Meow,</span> here to shop for coffee goods? Awesome, but first, a quick smile at cute and silly kitties!</p>
+                        <p className="w-50"><span id="meow">Meow,</span> here to shop for coffee goods? Awesome, but first, a quick smile at cute and silly kitties!</p>
                         <div className=" d-flex flex-wrap justify-content-center">
                             <button className="btn btn-warning m-1" onClick={getRandomKitties}>More Kitties</button>
                             {/* <a href="/shop" onClick={goShop}><button className="btn btn-info ml-4">Ready to shop</button></a> */}
-                            <Link to="/shop"><button className="btn btn-info m-1">Ready to shop</button></Link>
+                            <Link to="/shop"><button className="btn btn-outline-info m-1">Ready to shop</button></Link>
                         </div>
                     </div>
 
