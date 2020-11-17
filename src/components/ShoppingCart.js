@@ -48,7 +48,7 @@ const ShoppingCart = (props) => {
                                 <tr key={item.product.product_id}>
                                     <td className="td-name_width">{item.product.product_name}</td>
                                     <td>
-                                        <input onChange={(e) => handleChange(item.product, e)} className="td_qty_width" type="number" name="qty" id="qty" min={0} max={100} />
+                                        <input onChange={(e) => handleChange(item.product, e)} className="td_qty_width" type="number" name="qty" id="qty" min={0} max={100} value={item.qty}/>
                                     </td>
                                     <td className="td_qty_width text-center">{item.product.product_price}</td>
                                     <td><img onClick={() => props.removeItem(item.product.product_id)} id="cancel" className="rounded float-right" src={cancel} alt="close button" /></td>

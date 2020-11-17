@@ -1,5 +1,6 @@
 import Axios from 'axios';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = (props) => {
 
@@ -66,6 +67,11 @@ const Home = (props) => {
     //     console.log("effect", kitty);
     // }, [kitty])
 
+    // const goShop = (e) => {
+    //     e.preventDefault();
+
+    // }
+
     return (
 
         <div className="container-fluid fade-in">
@@ -77,7 +83,8 @@ const Home = (props) => {
                     <p className="w-50"><span id="meow">Meow,</span> here to shop for coffee goods? Awesome, but first, a quick smile at cute and silly kitties!</p>
                     <div>
                         <button className="btn btn-warning align-self-center" onClick={getRandomKitties}>More Kitties</button>
-                        <a href={"/shop"}><button className="btn btn-info ml-4">Ready to shop</button></a>
+                        {/* <a href="/shop" onClick={goShop}><button className="btn btn-info ml-4">Ready to shop</button></a> */}
+                        <Link to="/shop"><button className="btn btn-info ml-4">Ready to shop</button></Link>
                     </div>
                 </div>
 

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import shop_cart from '../img/shopping-cart.png';
 import ProductList from './ProductList';
 import ShoppingCart from './ShoppingCart';
-import shop_cart from '../img/shopping-cart.png';
 
 const Shop = () => {
 
@@ -82,7 +82,7 @@ const Shop = () => {
     const [shop_cart_items, setShopCart] = useState([])
     const add_shop_cart = (e, product) => {
         e.preventDefault();
-        open_shop();
+        open_shop(e);
 
         for (let item of shop_cart_items) {
             // console.log("item", item);
@@ -94,7 +94,7 @@ const Shop = () => {
 
         const item = {
             product: product,
-            qty: 0
+            qty: 1
         }
 
         setShopCart([...shop_cart_items, item]);
