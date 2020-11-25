@@ -1,7 +1,8 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import '../../src/style.css';
-import close from '../img/close.png'
-import cancel from '../img/cancel.png'
+import cancel from '../img/cancel.png';
+import close from '../img/close.png';
 import coffee from '../img/coffee-cup.png';
 
 const ShoppingCart = (props) => {
@@ -24,6 +25,24 @@ const ShoppingCart = (props) => {
         props.updateCart(item);
     }
 
+    const history = useHistory();
+    console.log(useHistory());
+    const checkout = (e) => {
+        e.preventDefault();
+        console.log("checkin out");
+        let checkout_details = {
+            items: cart_items,
+            total: props.total
+        }
+
+        history.push({
+            pathname: "/receipt",
+            state: {
+                detail: checkout_details
+            }
+        });
+    }
+
     
 
     return (
@@ -32,7 +51,7 @@ const ShoppingCart = (props) => {
             <h6 className="d-inline-block mr-3">Shopping Cart</h6>
             <img id="cup" src={coffee} alt="kitty"/>
             <hr />
-            <form onSubmit={(e)=>props.checkout(e)} method="POST">
+            <form onSubmit={(e)=>checkout(e)} method="POST">
                 <table>
                     <thead>
                         <tr>
