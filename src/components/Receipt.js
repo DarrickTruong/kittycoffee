@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const Receipt = () => {
+const Receipt = (props) => {
     const location = useLocation();
 
     let items = location.state.detail.items;
