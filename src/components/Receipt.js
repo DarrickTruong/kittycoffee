@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useLocation } from 'react-router-dom';
 
 const Receipt = (props) => {
@@ -7,10 +7,10 @@ const Receipt = (props) => {
     let items = location.state.detail.items;
     let total = location.state.detail.total;
     
-    useEffect(()=> {
-        console.log(location.state.detail);
+    // useEffect(()=> {
+    //     console.log(location.state.detail);
         
-    },[location])
+    // },[location])
     return (
         <div className="container">
             <h1>Thank you for your purchase!</h1>

@@ -26,9 +26,9 @@ const ShoppingCart = (props) => {
     }
 
     const history = useHistory();
-    console.log(useHistory());
     const checkout = (e) => {
         e.preventDefault();
+        hideCart();
         console.log("checkin out");
         let checkout_details = {
             items: cart_items,

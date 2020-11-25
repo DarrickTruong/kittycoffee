@@ -141,24 +141,6 @@ const App = () => {
         }
 
     }
-    // redirect to checkout receipt
-    // const history = useHistory();
-    // console.log(useHistory());
-    // const checkout = (e) => {
-    //     e.preventDefault();
-    //     console.log("checkin out");
-    //     let checkout_details = {
-    //         items: shop_cart_items,
-    //         total: shop_total
-    //     }
-
-    //     history.push({
-    //         pathname: "/receipt",
-    //         state: {
-    //             detail: checkout_details
-    //         }
-    //     });
-    // }
 
     // recalulate total after shopping cart is updated
     useEffect(() => {

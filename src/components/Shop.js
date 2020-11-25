@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import { useHistory } from 'react-router-dom';
 import shop_cart from '../img/shopping-cart.png';
 import ProductList from './ProductList';
 // import ShoppingCart from './ShoppingCart';
